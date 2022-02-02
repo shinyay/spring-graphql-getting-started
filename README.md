@@ -5,6 +5,11 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 
 ## Description
 
+### Dependencies
+
+- org.springframework.boot
+  - `spring-boot-starter-graphql`
+
 ## Demo
 
 ## Features
