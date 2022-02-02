@@ -1,6 +1,7 @@
 # Getting Started with GraphQL and Spring Boot
 
-Overview
+Spring for GraphQL provides support for Spring applications built on GraphQL Java.
+Spring for GraphQL aims to be the foundation for all Spring, GraphQL applications.
 
 ## Description
 
