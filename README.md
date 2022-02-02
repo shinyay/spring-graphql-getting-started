@@ -9,6 +9,8 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 
 - org.springframework.boot
   - `spring-boot-starter-graphql`
+  - `spring-boot-starter-data-web`
+  - `spring-boot-starter-data-jpa`
 
 ## Demo
 
