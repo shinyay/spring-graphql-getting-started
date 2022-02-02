@@ -20,6 +20,7 @@ Overview
 ## References
 
 - [Spring for GraphQL Documentation (version 1.0.0-M5)](https://docs.spring.io/spring-graphql/docs/1.0.0-M5/reference/html/)
+- [GraphQL Java](https://www.graphql-java.com/)
 
 ## Licence
 
