@@ -1,0 +1,7 @@
+type Member {
+  id: ID!
+  name: String!
+}
+type Query {
+  members: [Member]
+}
