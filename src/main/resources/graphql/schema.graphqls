@@ -1,7 +1,8 @@
+type Query {
+  members: [Member]
+}
+
 type Member {
   id: ID!
   name: String!
-}
-type Query {
-  members: [Member]
 }
