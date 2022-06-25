@@ -6,7 +6,7 @@ import javax.persistence.GenerationType
 import javax.persistence.Id
 
 @Entity
-data class Member(
+data class Author(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int,
