@@ -2,7 +2,7 @@ type Query {
   members: [Member]
 }
 
-type Member {
+type Author {
   id: ID!
   name: String!
 }
