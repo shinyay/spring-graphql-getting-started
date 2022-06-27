@@ -1,6 +1,6 @@
 package io.spring.shinyay.graphql.repository
 
-import io.spring.shinyay.graphql.entity.Member
+import io.spring.shinyay.graphql.entity.Author
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface MemberRepository : JpaRepository<Member, Int>
+interface MemberRepository : JpaRepository<Author, Int>
