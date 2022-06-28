@@ -5,7 +5,7 @@ import javax.persistence.*
 @Entity
 data class Author(
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
     val name: String,
     @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.LAZY)
