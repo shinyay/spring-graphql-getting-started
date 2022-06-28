@@ -10,4 +10,5 @@ data class Author(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int,
-    val name: String)
+    val firstName: String,
+    val lastName: String)
