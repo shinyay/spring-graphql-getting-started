@@ -4,4 +4,6 @@ spring:
       enabled: true
     cors:
       allowed-origins: *
-
+    schema:
+      printer:
+        enabled: true
