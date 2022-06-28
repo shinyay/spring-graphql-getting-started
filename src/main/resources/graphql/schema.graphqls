@@ -1,5 +1,5 @@
 type Query {
-  members: [Member]
+  authors: [Author]
 }
 
 type Author {
