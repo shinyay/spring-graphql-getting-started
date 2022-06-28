@@ -9,5 +9,6 @@ import javax.persistence.Id
 data class Book (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long
+    val id: Long,
+    val title: String
     )
