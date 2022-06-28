@@ -1,5 +1,5 @@
 type Query {
-  authors: [Book]
+  books: [Book]
 }
 
 type Book {
