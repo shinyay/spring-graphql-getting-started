@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Bean
 class SpringAppApplication {
 
 	@Bean
-	fun applicationRunner(authorRepository: AuthorRepository, bookRepository: BookRepository): ApplicationRunner {
-	}
+	fun applicationRunner(authorRepository: AuthorRepository, bookRepository: BookRepository) =
+		ApplicationRunner {  }
 }
 
 fun main(args: Array<String>) {
