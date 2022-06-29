@@ -9,5 +9,5 @@ data class Author(
     val id: Long,
     val name: String,
     @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.LAZY)
-    val books: List<Book>
+    val books: List<Book>? = null
 )
