@@ -1,9 +1,6 @@
 package io.spring.shinyay.graphql.entity
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import javax.persistence.*
 
 @Entity
 data class Book (
@@ -11,5 +8,7 @@ data class Book (
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
     val title: String,
-    val publisher:String
+    val publisher:String,
+    @ManyToOne(fetch = FetchType.LAZY)
+    val author: Author
     )
