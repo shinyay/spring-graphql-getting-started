@@ -6,8 +6,8 @@ import javax.persistence.*
 data class Author(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
-    val name: String,
+    val id: Long = 0,
+    val name: String = "",
     @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.LAZY)
     val books: List<Book>? = null
 )
