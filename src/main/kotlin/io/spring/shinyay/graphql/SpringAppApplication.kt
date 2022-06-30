@@ -15,6 +15,7 @@ class SpringAppApplication {
 	fun applicationRunner(authorRepository: AuthorRepository, bookRepository: BookRepository) =
 		ApplicationRunner {
 			val josh = authorRepository.save(Author(name = "Josh Long"))
+			val mark = authorRepository.save(Author(name ="Mark Heckler"))
 		}
 }
 
