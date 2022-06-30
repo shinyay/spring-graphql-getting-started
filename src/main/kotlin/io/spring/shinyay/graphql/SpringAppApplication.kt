@@ -1,6 +1,7 @@
 package io.spring.shinyay.graphql
 
 import io.spring.shinyay.graphql.entity.Author
+import io.spring.shinyay.graphql.entity.Book
 import io.spring.shinyay.graphql.repository.AuthorRepository
 import io.spring.shinyay.graphql.repository.BookRepository
 import org.springframework.boot.ApplicationRunner
@@ -16,6 +17,10 @@ class SpringAppApplication {
 		ApplicationRunner {
 			val josh = authorRepository.save(Author(name = "Josh Long"))
 			val mark = authorRepository.save(Author(name ="Mark Heckler"))
+			bookRepository.saveAll(listOf(
+				Book(title = "Reactive Spring", author = josh)
+			))
+
 		}
 }
 
