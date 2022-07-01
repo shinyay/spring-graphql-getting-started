@@ -8,4 +8,6 @@ import org.springframework.stereotype.Controller
 @Controller
 class AuthorController(val authorRepository: AuthorRepository) {
 
+    @QueryMapping
+    fun authors(): Iterable<Author> = authorRepository.findAll()
 }
