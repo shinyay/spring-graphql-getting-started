@@ -25,6 +25,8 @@ spring:
       enabled: true
 ```
 
+You can access GraphiQL [`http://localhost:8080/graphiql`](http://localhost:8080/graphiql)
+
 ## Features
 
 - feature:1
