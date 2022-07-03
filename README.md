@@ -27,7 +27,7 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 
 ## References
 
-- [Spring for GraphQL Documentation (version 1.0.0-M5)](https://docs.spring.io/spring-graphql/docs/1.0.0-M5/reference/html/)
+- [Spring for GraphQL Documentation](https://docs.spring.io/spring-graphql/docs/current-SNAPSHOT/reference/html/)
 - [GraphQL Java](https://www.graphql-java.com/)
 
 ## Licence
