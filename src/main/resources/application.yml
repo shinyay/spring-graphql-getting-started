@@ -10,3 +10,4 @@ spring:
     schema:
       printer:
         enabled: true
+      file-extensions: .graphql
