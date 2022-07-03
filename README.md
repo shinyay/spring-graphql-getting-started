@@ -18,6 +18,13 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 `GraphiQL` is a graphical interactive in-browser GraphQL IDE.
 `GraphiQL` is disabled by default so if you would like to use it you will need to open up `application.properties` and enable it with the following property:
 
+```yaml
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+```
+
 ## Features
 
 - feature:1
