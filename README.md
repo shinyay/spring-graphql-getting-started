@@ -14,6 +14,9 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 
 ## Demo
 
+### GraphiQL
+
+
 ## Features
 
 - feature:1
