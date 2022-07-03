@@ -15,7 +15,7 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 ## Demo
 
 ### GraphiQL
-
+`GraphiQL` is a graphical interactive in-browser GraphQL IDE.
 
 ## Features
 
