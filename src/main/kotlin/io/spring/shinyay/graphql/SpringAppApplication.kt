@@ -15,8 +15,8 @@ class SpringAppApplication {
 	@Bean
 	fun applicationRunner(authorRepository: AuthorRepository, bookRepository: BookRepository) =
 		ApplicationRunner {
-			val josh = authorRepository.save(Author(name = "Josh Long"))
-			val mark = authorRepository.save(Author(name ="Mark Heckler"))
+			val josh: Author = authorRepository.save(Author(name = "Josh Long"))
+			val mark: Author = authorRepository.save(Author(name ="Mark Heckler"))
 			bookRepository.saveAll(listOf(
 				Book(title = "Reactive Spring", author = josh),
 				Book(title = "Cloud Native Java", author = josh),
