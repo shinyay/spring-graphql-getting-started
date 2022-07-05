@@ -9,6 +9,11 @@ data class Book(
     val id: Long = 0,
     val title: String = "",
     val publisher: String = "",
+    ) {
     @ManyToOne(fetch = FetchType.LAZY)
-    val author: Author? = null
-    )
+    var author: Author? = null
+
+    constructor(id: Long = 0, title: String = "", publisher: String = "", author: Author? = null) : this(id, title, publisher) {
+        this.author = author
+    }
+}
