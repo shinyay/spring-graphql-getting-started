@@ -1,6 +1,7 @@
 package io.spring.shinyay.graphql.controller
 
 import io.spring.shinyay.graphql.entity.Author
+import io.spring.shinyay.graphql.entity.Book
 import io.spring.shinyay.graphql.repository.AuthorRepository
 import org.springframework.graphql.data.method.annotation.Argument
 import org.springframework.graphql.data.method.annotation.MutationMapping
@@ -20,7 +21,9 @@ class AuthorController(val authorRepository: AuthorRepository) {
     }
 
     @MutationMapping
-    fun addBook(@Argument book: BookInput) {
+    fun addBook(@Argument bookInput: BookInput) {
+        val author = authorRepository.findById(bookInput.authorId).orElseThrow()
+        val book = Book(title = bookInput.title, publisher = bookInput.publisher, author = author)
 
     }
 }
