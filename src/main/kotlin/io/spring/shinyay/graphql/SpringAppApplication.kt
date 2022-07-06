@@ -18,7 +18,7 @@ class SpringAppApplication {
 			val josh: Author = authorRepository.save(Author(name = "Josh Long"))
 			val mark: Author = authorRepository.save(Author(name ="Mark Heckler"))
 			bookRepository.saveAll(listOf(
-				Book(title = "Reactive Spring", author = josh),
+				Book(title = "Reactive Spring", author = authorRepository.),
 				Book(title = "Cloud Native Java", author = josh),
 				Book(title = "Spring Boot Up & Running", author = mark)
 			))
