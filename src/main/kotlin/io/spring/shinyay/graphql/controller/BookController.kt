@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller
 @Controller
 class BookController(val bookRepository: BookRepository) {
 
-    @SchemaMapping(typeName = "Query")
+    @SchemaMapping(typeName = "Query", value = "books")
     fun findAllBooks(): MutableList<Book> {
         return bookRepository.findAll()
     }
