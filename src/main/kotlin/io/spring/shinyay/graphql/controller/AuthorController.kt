@@ -21,13 +21,6 @@ class AuthorController(val authorRepository: AuthorRepository, val bookRepositor
     fun authorById(@Argument id: Long): Optional<Author> {
         return authorRepository.findById(id)
     }
-
-    @MutationMapping
-    fun addBook(@Argument bookInput: BookInput): Book {
-        val author = authorRepository.findById(bookInput.authorId).orElseThrow()
-        val book = Book(title = bookInput.title, publisher = bookInput.publisher, author = author)
-        return bookRepository.save(book)
-    }
 }
 
 
