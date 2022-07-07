@@ -17,12 +17,12 @@ class SpringAppApplication {
 		ApplicationRunner {
 			val josh: Author = authorRepository.save(Author(name = "Josh Long"))
 			val mark: Author = authorRepository.save(Author(name ="Mark Heckler"))
-//			bookRepository.saveAll(listOf(
-//				Book(title = "Reactive Spring", author = authorRepository.findAuthorByName("Josh Long")[0]),
-//				Book(title = "Cloud Native Java", author = josh),
-//				Book(title = "Spring Boot Up & Running", author = mark)
-//			))
-			bookRepository.save(Book(title = "Reactive Spring", author = authorRepository.findAuthorByName("Josh Long")[0]))
+			bookRepository.saveAll(listOf(
+				Book(title = "Reactive Spring", author = authorRepository.findAuthorByName("Josh Long")[0]),
+				Book(title = "Cloud Native Java", author = josh),
+				Book(title = "Spring Boot Up & Running", author = mark)
+			))
+//			bookRepository.save(Book(title = "Reactive Spring", author = authorRepository.findAuthorByName("Josh Long")[0]))
 
 		}
 }
