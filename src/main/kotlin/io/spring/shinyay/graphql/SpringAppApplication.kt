@@ -22,7 +22,6 @@ class SpringAppApplication {
 				Book(title = "Cloud Native Java", author = josh),
 				Book(title = "Spring Boot Up & Running", author = mark)
 			))
-//			bookRepository.save(Book(title = "Reactive Spring", author = authorRepository.findAuthorByName("Josh Long")[0]))
 
 		}
 }
