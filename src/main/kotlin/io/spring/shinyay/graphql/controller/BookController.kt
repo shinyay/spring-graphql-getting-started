@@ -22,5 +22,10 @@ class BookController(val bookRepository: BookRepository) {
 //        return bookRepository.findAll()
 //    }
 
-
+    @MutationMapping
+    fun addBook(@Argument bookInput: BookInput): Book {
+        val author = Author(name = bookInput.authorName)
+        val book = Book(title = bookInput.title, publisher = bookInput.publisher, author = author)
+        return bookRepository.save(book)
+    }
 }
