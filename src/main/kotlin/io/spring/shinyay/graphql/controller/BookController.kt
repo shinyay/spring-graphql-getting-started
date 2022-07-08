@@ -14,9 +14,13 @@ import org.springframework.stereotype.Controller
 class BookController(val bookRepository: BookRepository) {
 
     @QueryMapping
-    fun findAllBooks(): MutableList<Book> {
+    fun books(): MutableList<Book> {
         return bookRepository.findAll()
     }
+//    @SchemaMapping(typeName = "Query", value = "books")
+//    fun findAllBooks(): MutableList<Book> {
+//        return bookRepository.findAll()
+//    }
 
 
 }
