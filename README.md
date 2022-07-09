@@ -27,6 +27,8 @@ spring:
 
 You can access GraphiQL [`http://localhost:8080/graphiql`](http://localhost:8080/graphiql)
 
+#### Query for Authors
+
 ```graphql
 query {
   authors {
