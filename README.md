@@ -36,6 +36,15 @@ query {
 }
 ```
 
+```graphql
+query {
+	books {
+    id
+    title
+  }  
+}
+```
+
 ## Features
 
 - feature:1
