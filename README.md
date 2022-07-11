@@ -29,6 +29,8 @@ You can access GraphiQL [`http://localhost:8080/graphiql`](http://localhost:8080
 
 #### Query for Authors
 
+This query shows Author ID and Name:
+
 ```graphql
 query {
   authors {
