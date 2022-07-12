@@ -40,6 +40,10 @@ query {
 }
 ```
 
+#### Query for Books
+
+This query shows Book ID and Title:
+
 ```graphql
 query {
 	books {
