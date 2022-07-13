@@ -53,6 +53,20 @@ query {
 }
 ```
 
+#### Query for Authors and Books
+
+```graphql
+query {
+ authors{
+   id
+   name
+   books {
+     title
+   }
+ }
+}
+```
+
 ## Features
 
 - feature:1
