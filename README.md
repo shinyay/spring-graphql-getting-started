@@ -12,9 +12,15 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
   - `spring-boot-starter-data-web`
   - `spring-boot-starter-data-jpa`
 
+### GraphQL
+
+GraphQL is a query language for your API, and a server-side runtime for executing queries using a type system you define for your data.
+
+### GraphQL Type System
+
 ## Demo
 
-### GraphiQL
+### GraphiQL UI
 `GraphiQL` is a graphical interactive in-browser GraphQL IDE.
 `GraphiQL` is disabled by default so if you would like to use it you will need to open up `application.properties` and enable it with the following property:
 
@@ -50,6 +56,20 @@ query {
     id
     title
   }  
+}
+```
+
+#### Query for Authors and Books
+
+```graphql
+query {
+ authors{
+   id
+   name
+   books {
+     title
+   }
+ }
 }
 ```
 
