@@ -15,6 +15,9 @@ Spring for GraphQL aims to be the foundation for all Spring, GraphQL application
 ### GraphQL
 
 GraphQL is a query language for your API, and a server-side runtime for executing queries using a type system you define for your data.
+GraphQL was created back in 2012 by Facebook. GraphQL was open sourced back in 2015.
+
+- [GraphQL Spec](https://spec.graphql.org/)
 
 ### GraphQL Type System
 
