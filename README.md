@@ -21,6 +21,14 @@ GraphQL was created back in 2012 by Facebook. GraphQL was open sourced back in 2
 
 ### GraphQL Type System
 
+#### Scalar Types
+
+- `Int`: A signed 32-bit integer.
+- `Float`: A signed double-precision floating-point value.
+- `String`: A UTF-8 character sequence.
+- `Boolean`: true or false.
+- `ID`: The ID scalar type represents a unique identifier.
+
 ## Demo
 
 ### GraphiQL UI
