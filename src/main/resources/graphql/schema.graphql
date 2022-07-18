@@ -1,6 +1,7 @@
 type Query {
     authors: [Author]
     authorById(id: ID!): Author
+    authorByName(name: String!): [Author]
     books: [Book]
 }
 
