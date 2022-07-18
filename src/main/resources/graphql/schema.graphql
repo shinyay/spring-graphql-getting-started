@@ -10,9 +10,9 @@ type Mutation {
 }
 
 input BookInput {
-    title: String!
+    title: String
     publisher: String
-    authorName: String!
+    authorName: String
 }
 
 type Author {
