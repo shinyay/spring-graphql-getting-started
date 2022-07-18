@@ -21,6 +21,11 @@ class AuthorController(val authorRepository: AuthorRepository, val bookRepositor
     fun authorById(@Argument id: Long): Optional<Author> {
         return authorRepository.findById(id)
     }
+
+    @QueryMapping
+    fun authorByName(@Argument name: String): List<Author> {
+        return authorRepository.findAuthorByName(name)
+    }
 }
 
 
