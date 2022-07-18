@@ -29,6 +29,12 @@ GraphQL was created back in 2012 by Facebook. GraphQL was open sourced back in 2
 - `Boolean`: true or false.
 - `ID`: The ID scalar type represents a unique identifier.
 
+#### Operation Types
+
+Query: Used to read data
+Mutation: Used to create, update and delete data
+Subscription: Similar to a query allowing you to fetch data from the server. Subscriptions offer a long-lasting operation that can change their result over time.
+
 ## Demo
 
 ### GraphiQL UI
